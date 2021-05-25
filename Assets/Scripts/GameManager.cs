@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,11 +12,15 @@ public class GameManager : MonoBehaviour
     public Transform player;
     public Transform enemy;
 
+    public GameObject coinPrefab;
+    private GameObject newCoin;
 
     private void Start()
     {
         gameOverText.gameObject.SetActive(false);
         restartButton.gameObject.SetActive(false);
+        SpawnCoin();
+        StartCoroutine(createCoin());
     }
     public void EndGame()
     {
@@ -54,4 +59,24 @@ public class GameManager : MonoBehaviour
 
         restartButton.gameObject.SetActive(false);
     }
+
+    private void SpawnCoin()
+    {
+        newCoin = Instantiate(coinPrefab) as GameObject;
+        newCoin.transform.position = new Vector2(Random.Range(-6.0f, 6.0f), 4.15f);
+    }
+
+    IEnumerator createCoin()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1.5f);
+            if (!newCoin.gameObject)
+            {
+                Debug.Log("Creating new coin");
+                SpawnCoin();
+            }
+        }
+    }
+
 }

@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     // audio 
     [SerializeField] private AudioSource jumpSound;
     [SerializeField] private AudioSource marioDie;
+    [SerializeField] private AudioSource collectCoin;
     private bool dieSoundPlayed = false;
 
     // stuff for mario dying "animation"
@@ -77,7 +78,7 @@ public class PlayerController : MonoBehaviour
             {
                 countScoreState = false;
                 score++;
-                Debug.Log(score);
+                //Debug.Log(score);
             }
         }
 
@@ -146,7 +147,7 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = new Vector2(originalX, originalY);
         restartedGame = false;
-        boxCollider2d.isTrigger = false;
+        boxCollider2d.enabled = true;
         intoTheAbyss = false;
         fallingDownNow = false;
         dieSoundPlayed = false;
@@ -166,8 +167,18 @@ public class PlayerController : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
 
             // code to make mario fall into the abyss
-            boxCollider2d.isTrigger = true;
+            boxCollider2d.enabled = false;
             intoTheAbyss = true;
+        }
+
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            // if mario haven't die yet
+            if (!intoTheAbyss)
+            {
+                collectCoin.Play();
+                score++;
+            }
         }
     }
 
