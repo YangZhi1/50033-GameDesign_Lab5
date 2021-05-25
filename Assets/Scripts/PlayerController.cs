@@ -9,15 +9,12 @@ public class PlayerController : MonoBehaviour
     private float originalX;
     private float originalY;
 
-    // boolean value to reset mario's position
-    public static bool restartedGame = false;
-
     // speed values
-    public static float speed = 40;
+    public float speed = 40;
     private Rigidbody2D marioBody;
-    public static float maxSpeed = 40;
+    public float maxSpeed = 40;
     private bool onGroundState = true;
-    public static float upSpeed = 30;
+    public float upSpeed = 30;
 
     // mario's sprite to face left and right
     private SpriteRenderer marioSprite;
@@ -27,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     // score 
     public Text scoreText;
-    public static int score = 0;
+    private int score = 0;
     private bool countScoreState = false;
 
     // audio 
@@ -78,7 +75,6 @@ public class PlayerController : MonoBehaviour
             {
                 countScoreState = false;
                 score++;
-                //Debug.Log(score);
             }
         }
 
@@ -103,10 +99,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (restartedGame)
-        {
-            ResetMarioPosition();
-        }
         // dynamic rigidbody
         float moveHorizontal = Input.GetAxis("Horizontal");
         if (Mathf.Abs(moveHorizontal) > 0)
@@ -143,14 +135,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void ResetMarioPosition()
+    public void RestartGame()
     {
+        // reset mario's position
         transform.position = new Vector2(originalX, originalY);
-        restartedGame = false;
+        
+        // booleans for audio and "animation" of mario's death
         boxCollider2d.enabled = true;
         intoTheAbyss = false;
         fallingDownNow = false;
         dieSoundPlayed = false;
+
+        // reset speed to be able to move
+        speed = 40;
+        maxSpeed = 40;
+        upSpeed = 30;
+        score = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -160,10 +160,16 @@ public class PlayerController : MonoBehaviour
             // code to only play the die sound once
             if (!dieSoundPlayed)
             {
-                MenuController.isDead = true;
+                FindObjectOfType<MenuController>().stopSong();
                 marioDie.Play();
                 dieSoundPlayed = true;
             }
+
+            // freeze mario's movements
+            speed = 0;
+            maxSpeed = 0;
+            upSpeed = 0;
+
             FindObjectOfType<GameManager>().EndGame();
 
             // code to make mario fall into the abyss

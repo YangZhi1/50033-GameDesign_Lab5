@@ -14,8 +14,7 @@ public class EnemyController : MonoBehaviour
     private float originalX;
     private float originalY;
 
-    public static bool stopMovement = false;
-    public static bool restartedGame = false;
+    private bool stopMovement = false;
 
 
     // Start is called before the first frame update
@@ -37,20 +36,23 @@ public class EnemyController : MonoBehaviour
         enemyBody.MovePosition(enemyBody.position + velocity * Time.fixedDeltaTime);
     }
 
-    void ResetGombaPosition()
+    public void ResetGombaPosition()
     {
         transform.position = new Vector2(originalX, originalY);
-        restartedGame = false;
+        stopMovement = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            stopMovement = true;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (restartedGame)
-        {
-            ResetGombaPosition();
-        }
-
         if (!stopMovement)
         {
             if (Mathf.Abs(enemyBody.position.x - originalX) < maxOffset)

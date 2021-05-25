@@ -30,14 +30,6 @@ public class GameManager : MonoBehaviour
             gameOverText.gameObject.SetActive(true);
             restartButton.gameObject.SetActive(true);
 
-            // freeze Mario and Gomba's positions
-            // TODO: Find a way to freeze gomba's position
-            PlayerController.speed = 0;
-            PlayerController.maxSpeed = 0;
-            PlayerController.upSpeed = 0;
-
-            EnemyController.stopMovement = true;
-
             gameHasEnded = true;
         }
 
@@ -47,13 +39,6 @@ public class GameManager : MonoBehaviour
     {
         // SceneManager.LoadScene("SampleScene");
         gameOverText.gameObject.SetActive(false);
-
-        PlayerController.speed = 40;
-        PlayerController.maxSpeed = 40;
-        PlayerController.upSpeed = 30;
-        PlayerController.score = 0;
-
-        EnemyController.stopMovement = false;
 
         gameHasEnded = false;
 
@@ -73,7 +58,6 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1.5f);
             if (!newCoin.gameObject)
             {
-                Debug.Log("Creating new coin");
                 SpawnCoin();
             }
         }

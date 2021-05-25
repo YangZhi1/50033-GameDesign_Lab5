@@ -5,7 +5,6 @@ using UnityEngine;
 public class MenuController : MonoBehaviour
 {
     [SerializeField] private AudioSource themeSong;
-    public static bool isDead = false;
 
     private void Awake()
     {
@@ -31,24 +30,13 @@ public class MenuController : MonoBehaviour
     public void RestartButtonClicked()
     {
         themeSong.Play();
-        isDead = false;
-        EnemyController.restartedGame = true;
-        PlayerController.restartedGame = true;
         FindObjectOfType<GameManager>().Restart();
-    }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        FindObjectOfType<PlayerController>().RestartGame();
+        FindObjectOfType<EnemyController>().ResetGombaPosition();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void stopSong()
     {
-        if (isDead)
-        {
-            themeSong.Stop();
-        }
+        themeSong.Stop();
     }
 }
