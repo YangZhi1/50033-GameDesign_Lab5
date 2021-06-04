@@ -1,0 +1,2340 @@
+fileFormatVersion: 2
+guid: d42d73e5b5e5f6b4e8418b9b3fc532c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4428308481555967444
+    second: PC Computer - MapleStory - Halloween Background_0
+  - first:
+      213: -9070195445595203871
+    second: PC Computer - MapleStory - Halloween Background_1
+  - first:
+      213: 1952026768987641057
+    second: PC Computer - MapleStory - Halloween Background_2
+  - first:
+      213: -4882362735452890684
+    second: PC Computer - MapleStory - Halloween Background_3
+  - first:
+      213: 8241115505935826658
+    second: PC Computer - MapleStory - Halloween Background_4
+  - first:
+      213: -484010012559700795
+    second: PC Computer - MapleStory - Halloween Background_5
+  - first:
+      213: 4623303106125962547
+    second: PC Computer - MapleStory - Halloween Background_6
+  - first:
+      213: -8062540297194144198
+    second: PC Computer - MapleStory - Halloween Background_7
+  - first:
+      213: 1255973534565618208
+    second: PC Computer - MapleStory - Halloween Background_8
+  - first:
+      213: -4512707787835988694
+    second: PC Computer - MapleStory - Halloween Background_9
+  - first:
+      213: 2417540587903730240
+    second: PC Computer - MapleStory - Halloween Background_10
+  - first:
+      213: -8221603065339142829
+    second: PC Computer - MapleStory - Halloween Background_11
+  - first:
+      213: 7530766723522253930
+    second: PC Computer - MapleStory - Halloween Background_12
+  - first:
+      213: -1763929093908209001
+    second: PC Computer - MapleStory - Halloween Background_13
+  - first:
+      213: 4271002185735991748
+    second: PC Computer - MapleStory - Halloween Background_14
+  - first:
+      213: 1411742701471117354
+    second: PC Computer - MapleStory - Halloween Background_15
+  - first:
+      213: -2166642695098075312
+    second: PC Computer - MapleStory - Halloween Background_16
+  - first:
+      213: 1361088242810123492
+    second: PC Computer - MapleStory - Halloween Background_17
+  - first:
+      213: 2995492594841772424
+    second: PC Computer - MapleStory - Halloween Background_18
+  - first:
+      213: 3144222617088052109
+    second: PC Computer - MapleStory - Halloween Background_19
+  - first:
+      213: -5660700766279677455
+    second: PC Computer - MapleStory - Halloween Background_20
+  - first:
+      213: 6461466326133719167
+    second: PC Computer - MapleStory - Halloween Background_21
+  - first:
+      213: 6077915347057248196
+    second: PC Computer - MapleStory - Halloween Background_22
+  - first:
+      213: 4071574278678635978
+    second: PC Computer - MapleStory - Halloween Background_23
+  - first:
+      213: -4093219727810028713
+    second: PC Computer - MapleStory - Halloween Background_24
+  - first:
+      213: 820351001608917800
+    second: PC Computer - MapleStory - Halloween Background_25
+  - first:
+      213: -5634910826734766088
+    second: PC Computer - MapleStory - Halloween Background_26
+  - first:
+      213: 8290169533430338841
+    second: PC Computer - MapleStory - Halloween Background_27
+  - first:
+      213: 4343897094160801076
+    second: PC Computer - MapleStory - Halloween Background_28
+  - first:
+      213: 4904344739612188900
+    second: PC Computer - MapleStory - Halloween Background_29
+  - first:
+      213: 6781168002517000919
+    second: PC Computer - MapleStory - Halloween Background_30
+  - first:
+      213: 9061005388928361181
+    second: PC Computer - MapleStory - Halloween Background_31
+  - first:
+      213: 2187039914761004808
+    second: PC Computer - MapleStory - Halloween Background_32
+  - first:
+      213: 3160244692870341789
+    second: PC Computer - MapleStory - Halloween Background_33
+  - first:
+      213: -6272528735562487788
+    second: PC Computer - MapleStory - Halloween Background_34
+  - first:
+      213: -7960669815573217241
+    second: PC Computer - MapleStory - Halloween Background_35
+  - first:
+      213: -7907341301343649378
+    second: PC Computer - MapleStory - Halloween Background_36
+  - first:
+      213: 1264896857468232714
+    second: PC Computer - MapleStory - Halloween Background_37
+  - first:
+      213: 7423725609015458600
+    second: PC Computer - MapleStory - Halloween Background_38
+  - first:
+      213: -6314706781711185799
+    second: PC Computer - MapleStory - Halloween Background_39
+  - first:
+      213: 4537286681787732751
+    second: PC Computer - MapleStory - Halloween Background_40
+  - first:
+      213: 4974064487575292951
+    second: PC Computer - MapleStory - Halloween Background_41
+  - first:
+      213: 8094973981824305879
+    second: PC Computer - MapleStory - Halloween Background_42
+  - first:
+      213: 8674403961690960874
+    second: PC Computer - MapleStory - Halloween Background_43
+  - first:
+      213: -970159961844818641
+    second: PC Computer - MapleStory - Halloween Background_44
+  - first:
+      213: -3552631749405990774
+    second: PC Computer - MapleStory - Halloween Background_45
+  - first:
+      213: 45226819862082992
+    second: PC Computer - MapleStory - Halloween Background_46
+  - first:
+      213: -6416512057483305026
+    second: PC Computer - MapleStory - Halloween Background_47
+  - first:
+      213: 9080966150031786058
+    second: PC Computer - MapleStory - Halloween Background_48
+  - first:
+      213: -5974143590418151776
+    second: PC Computer - MapleStory - Halloween Background_49
+  - first:
+      213: 3767596041601328107
+    second: PC Computer - MapleStory - Halloween Background_50
+  - first:
+      213: -1816045519184738985
+    second: PC Computer - MapleStory - Halloween Background_51
+  - first:
+      213: 3240393167203236560
+    second: PC Computer - MapleStory - Halloween Background_52
+  - first:
+      213: -6519259221991872576
+    second: PC Computer - MapleStory - Halloween Background_53
+  - first:
+      213: 3470613006410771494
+    second: PC Computer - MapleStory - Halloween Background_54
+  - first:
+      213: -9191133228624349731
+    second: PC Computer - MapleStory - Halloween Background_55
+  - first:
+      213: -1480538145063857426
+    second: PC Computer - MapleStory - Halloween Background_56
+  - first:
+      213: -5988351689547845637
+    second: PC Computer - MapleStory - Halloween Background_57
+  - first:
+      213: 4614298566018688949
+    second: PC Computer - MapleStory - Halloween Background_58
+  - first:
+      213: -7350550146550650179
+    second: PC Computer - MapleStory - Halloween Background_59
+  - first:
+      213: -4199720138608127766
+    second: PC Computer - MapleStory - Halloween Background_60
+  - first:
+      213: 8668184618946002880
+    second: PC Computer - MapleStory - Halloween Background_61
+  - first:
+      213: -7236349127551148619
+    second: PC Computer - MapleStory - Halloween Background_62
+  - first:
+      213: -1527525060387831336
+    second: PC Computer - MapleStory - Halloween Background_63
+  - first:
+      213: -5265347322272082347
+    second: PC Computer - MapleStory - Halloween Background_64
+  - first:
+      213: 4891119138861042533
+    second: PC Computer - MapleStory - Halloween Background_65
+  - first:
+      213: 7792063062356828172
+    second: PC Computer - MapleStory - Halloween Background_66
+  - first:
+      213: -4863746229966355939
+    second: PC Computer - MapleStory - Halloween Background_67
+  - first:
+      213: -3760474403906716910
+    second: PC Computer - MapleStory - Halloween Background_68
+  - first:
+      213: -5275307028541896108
+    second: PC Computer - MapleStory - Halloween Background_69
+  - first:
+      213: -1778812586454632415
+    second: PC Computer - MapleStory - Halloween Background_70
+  - first:
+      213: -5330524783008381260
+    second: PC Computer - MapleStory - Halloween Background_71
+  - first:
+      213: 9087388919772070470
+    second: PC Computer - MapleStory - Halloween Background_72
+  - first:
+      213: 7276889534882537431
+    second: PC Computer - MapleStory - Halloween Background_73
+  - first:
+      213: -8564367619628264430
+    second: PC Computer - MapleStory - Halloween Background_74
+  - first:
+      213: 5725315657163186109
+    second: PC Computer - MapleStory - Halloween Background_75
+  - first:
+      213: 5342701474317331228
+    second: PC Computer - MapleStory - Halloween Background_76
+  - first:
+      213: -9106622661974538057
+    second: PC Computer - MapleStory - Halloween Background_77
+  - first:
+      213: 4473232205998041964
+    second: PC Computer - MapleStory - Halloween Background_78
+  - first:
+      213: 6653226857172177400
+    second: PC Computer - MapleStory - Halloween Background_79
+  - first:
+      213: 3175366584690792246
+    second: PC Computer - MapleStory - Halloween Background_80
+  - first:
+      213: -82328780371224189
+    second: PC Computer - MapleStory - Halloween Background_81
+  - first:
+      213: -82502811502388908
+    second: PC Computer - MapleStory - Halloween Background_82
+  - first:
+      213: 7030500110028534397
+    second: PC Computer - MapleStory - Halloween Background_83
+  - first:
+      213: 458792197008449585
+    second: PC Computer - MapleStory - Halloween Background_84
+  - first:
+      213: 8853100863289357953
+    second: PC Computer - MapleStory - Halloween Background_85
+  - first:
+      213: -4784526868767847878
+    second: PC Computer - MapleStory - Halloween Background_86
+  - first:
+      213: -6480175005881790858
+    second: PC Computer - MapleStory - Halloween Background_87
+  - first:
+      213: 2527590022776798642
+    second: PC Computer - MapleStory - Halloween Background_88
+  - first:
+      213: 3698655915768852158
+    second: PC Computer - MapleStory - Halloween Background_89
+  - first:
+      213: 3862841902526700969
+    second: PC Computer - MapleStory - Halloween Background_90
+  - first:
+      213: -728014628049942699
+    second: PC Computer - MapleStory - Halloween Background_91
+  - first:
+      213: 3365956091958097202
+    second: PC Computer - MapleStory - Halloween Background_92
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2264
+        width: 134
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22d101f5ec7b82c0800000000000000
+      internalID: -4428308481555967444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2264
+        width: 135
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e69ee55c41302280800000000000000
+      internalID: -9070195445595203871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 2264
+        width: 134
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4df8d010ef61b10800000000000000
+      internalID: 1952026768987641057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_3
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 2264
+        width: 134
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9d9b0c5fc5e3cb0800000000000000
+      internalID: -4882362735452890684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_4
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 2264
+        width: 134
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eeb44ca3e25e5270800000000000000
+      internalID: 8241115505935826658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_5
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 2264
+        width: 135
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc85ad35737849f0800000000000000
+      internalID: -484010012559700795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_6
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 2264
+        width: 134
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d19910ea5492040800000000000000
+      internalID: 4623303106125962547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_7
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2264
+        width: 134
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e787e115a1c1090800000000000000
+      internalID: -8062540297194144198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_8
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 2264
+        width: 134
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0225317764d1e6110800000000000000
+      internalID: 1255973534565618208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_9
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 2264
+        width: 134
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25a5e22d24af51c0800000000000000
+      internalID: -4512707787835988694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2094
+        width: 109
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04247142b54dc8120800000000000000
+      internalID: 2417540587903730240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2094
+        width: 108
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d923e629ff6ed80800000000000000
+      internalID: -8221603065339142829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 2053
+        width: 25
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6450e17f68a28860800000000000000
+      internalID: 7530766723522253930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 2053
+        width: 25
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792ef94b5d34587e0800000000000000
+      internalID: -1763929093908209001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_14
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 2053
+        width: 25
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1f5b3fbd5a54b30800000000000000
+      internalID: 4271002185735991748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1652
+        width: 803
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20bf6bd184879310800000000000000
+      internalID: 1411742701471117354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_16
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 2157
+        width: 204
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057fb7bb2f98ee1e0800000000000000
+      internalID: -2166642695098075312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_17
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1904
+        width: 215
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e478a4ab8e83e210800000000000000
+      internalID: 1361088242810123492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1774
+        width: 161
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8816bdae4a0229920800000000000000
+      internalID: 2995492594841772424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_19
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1645
+        width: 226
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b484abfc582ab20800000000000000
+      internalID: 3144222617088052109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_20
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1278
+        width: 803
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f94e1e05a62171b0800000000000000
+      internalID: -5660700766279677455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_21
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1457
+        width: 295
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f704959a36dbba950800000000000000
+      internalID: 6461466326133719167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_22
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1587
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c70e345ec7195450800000000000000
+      internalID: 6077915347057248196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_23
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1456
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5e14dfb33218830800000000000000
+      internalID: 4071574278678635978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_24
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 1280
+        width: 367
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b13482856f137c0800000000000000
+      internalID: -4093219727810028713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_25
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1087
+        width: 325
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823190ab3e8726b00800000000000000
+      internalID: 820351001608917800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_26
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1236
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7b8774576ccc1b0800000000000000
+      internalID: -5634910826734766088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_27
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1100
+        width: 134
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91591e774499c0370800000000000000
+      internalID: 8290169533430338841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_28
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1059
+        width: 430
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d5e46646f984c30800000000000000
+      internalID: 4343897094160801076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_29
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1061
+        width: 423
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0e3ac6e8bbf0440800000000000000
+      internalID: 4904344739612188900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_30
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 631
+        width: 402
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d26540ce5c8b1e50800000000000000
+      internalID: 6781168002517000919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_31
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 848
+        width: 109
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2a9fad4682fbd70800000000000000
+      internalID: 9061005388928361181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_32
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 848
+        width: 109
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8072eec073de95e10800000000000000
+      internalID: 2187039914761004808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_33
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 848
+        width: 108
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94a9d1fdc17bdb20800000000000000
+      internalID: 3160244692870341789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_34
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 848
+        width: 109
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4182e59295083f8a0800000000000000
+      internalID: -6272528735562487788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_35
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 848
+        width: 109
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720859ceaf4068190800000000000000
+      internalID: -7960669815573217241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_36
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 848
+        width: 125
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9103a73bfa734290800000000000000
+      internalID: -7907341301343649378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_37
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 711
+        width: 274
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04e6ea7df0dd8110800000000000000
+      internalID: 1264896857468232714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 505
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b365bdb1f560760800000000000000
+      internalID: 7423725609015458600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_39
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 495
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978ca5783a7ad58a0800000000000000
+      internalID: -6314706781711185799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_40
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 533
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f039110923ea7fe30800000000000000
+      internalID: 4537286681787732751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_41
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 498
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c8fc73c4d670540800000000000000
+      internalID: 4974064487575292951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_42
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 528
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dacaac82ff175070800000000000000
+      internalID: 8094973981824305879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_43
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 524
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3b4d6b17ca16870800000000000000
+      internalID: 8674403961690960874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_44
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 520
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ddee2a7ac4982f0800000000000000
+      internalID: -970159961844818641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_45
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 523
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80a1ee1f3482bec0800000000000000
+      internalID: -3552631749405990774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_46
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 485
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b533349d8da0a000800000000000000
+      internalID: 45226819862082992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_47
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 477
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf52b4a748f3f6a0800000000000000
+      internalID: -6416512057483305026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_48
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 486
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40cdf5b992160e70800000000000000
+      internalID: 9080966150031786058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_49
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 437
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a603ff8e04971da0800000000000000
+      internalID: -5974143590418151776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_50
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 464
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3a0d463a0394430800000000000000
+      internalID: 3767596041601328107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_51
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 456
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755cd0dd83c1cc6e0800000000000000
+      internalID: -1816045519184738985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_52
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 451
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da70cfca6038fc20800000000000000
+      internalID: 3240393167203236560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_53
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 429
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c72c723740f685a0800000000000000
+      internalID: -6519259221991872576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_54
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 442
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ce6f724281a2030800000000000000
+      internalID: 3470613006410771494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_55
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 415
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd57e887609827080800000000000000
+      internalID: -9191133228624349731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_56
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 416
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee29d0bb662147be0800000000000000
+      internalID: -1480538145063857426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_57
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 407
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffe362bdd915eca0800000000000000
+      internalID: -5988351689547845637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_58
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 411
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b763232918490040800000000000000
+      internalID: 4614298566018688949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_59
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 409
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba272b26999df990800000000000000
+      internalID: -7350550146550650179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_60
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 403
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae05536f8c897b5c0800000000000000
+      internalID: -4199720138608127766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_61
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 378
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cff7c32cf39b4870800000000000000
+      internalID: 8668184618946002880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_62
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 370
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd1b9deec2539b90800000000000000
+      internalID: -7236349127551148619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_63
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 368
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1831efc042dcae0800000000000000
+      internalID: -1527525060387831336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_64
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 358
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5561be4e18abde6b0800000000000000
+      internalID: -5265347322272082347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_65
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 359
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b4de941feb0e340800000000000000
+      internalID: 4891119138861042533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_66
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 351
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00a8333218f22c60800000000000000
+      internalID: 7792063062356828172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_67
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 331
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12c535b290808cb0800000000000000
+      internalID: -4863746229966355939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_68
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 327
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bf038147c10dbc0800000000000000
+      internalID: -3760474403906716910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_69
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 322
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a83a215385ac6b0800000000000000
+      internalID: -5275307028541896108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_70
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 541
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128b06e80636057e0800000000000000
+      internalID: -1778812586454632415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_71
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 314
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b68e52c3fb2606b0800000000000000
+      internalID: -5330524783008381260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_72
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 307
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642c5d25314ec1e70800000000000000
+      internalID: 9087388919772070470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_73
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 286
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df5e643a74bcf460800000000000000
+      internalID: 7276889534882537431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_74
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 277
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2141332a601452980800000000000000
+      internalID: -8564367619628264430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_75
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 257
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf91349148647f40800000000000000
+      internalID: 5725315657163186109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_76
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 225
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1be3ad1fa6152a40800000000000000
+      internalID: 5342701474317331228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_77
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 227
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b84c7910f6ce9180800000000000000
+      internalID: -9106622661974538057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_78
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 223
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ba95cbdfc141e30800000000000000
+      internalID: 4473232205998041964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_79
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 180
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f116d78392055c50800000000000000
+      internalID: 6653226857172177400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_80
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 200
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637d320c51b211c20800000000000000
+      internalID: 3175366584690792246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_81
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 189
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3899e2319628bdef0800000000000000
+      internalID: -82328780371224189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_82
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 145
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459dd6b4124eadef0800000000000000
+      internalID: -82502811502388908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_83
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 132
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d727893d99a519160800000000000000
+      internalID: 7030500110028534397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_84
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 110
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130e8688215fd5600800000000000000
+      internalID: 458792197008449585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_85
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 112
+        width: 77
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186f01554588cda70800000000000000
+      internalID: 8853100863289357953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_86
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 106
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ac7c09922f99db0800000000000000
+      internalID: -4784526868767847878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_87
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 73
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e0d046a2bc116a0800000000000000
+      internalID: -6480175005881790858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_88
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 62
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdbe65ebbdc31320800000000000000
+      internalID: 2527590022776798642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_89
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 54
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebeacc585f3445330800000000000000
+      internalID: 3698655915768852158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_90
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 26
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad199f7e329b9530800000000000000
+      internalID: 3862841902526700969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_91
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 22
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5578bcf8d8295e5f0800000000000000
+      internalID: -728014628049942699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Halloween Background_92
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 10
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23579b66b3746be20800000000000000
+      internalID: 3365956091958097202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

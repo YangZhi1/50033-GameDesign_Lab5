@@ -4,71 +4,51 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private float maxOffset = 7.5f;
-    private float enemyPatroltime = 2.0f;
-    private int moveRight = -1;
-    private Vector2 velocity;
+    [SerializeField] private GameObject goombaPrefab;
+    [SerializeField] private float[] goombaLocationX;
 
-    private Rigidbody2D enemyBody;
-
-    private float originalX;
-    private float originalY;
-
-    private bool stopMovement = false;
-
+    private GameObject[] goombas;
 
     // Start is called before the first frame update
     void Start()
     {
-        enemyBody = GetComponent<Rigidbody2D>();
-        originalX = transform.position.x;
-        originalY = transform.position.y;
-        ComputeVelocity();
-    }
-
-    void ComputeVelocity()
-    {
-        velocity = new Vector2((moveRight) * maxOffset / enemyPatroltime, 0);
-    }
-
-    void MoveGomba()
-    {
-        enemyBody.MovePosition(enemyBody.position + velocity * Time.fixedDeltaTime);
-    }
-
-    public void ResetGombaPosition()
-    {
-        transform.position = new Vector2(originalX, originalY);
-        stopMovement = false;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
+        goombas = new GameObject[goombaLocationX.Length];
+        for(int i=0; i < goombaLocationX.Length; i++)
         {
-            stopMovement = true;
+            goombas[i] = Instantiate(goombaPrefab, new Vector3(goombaLocationX[i], -0.282f, 0), Quaternion.identity);
         }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!stopMovement)
-        {
-            if (Mathf.Abs(enemyBody.position.x - originalX) < maxOffset)
-            {
-                // move gomba
-                MoveGomba();
-            }
-
-            else
-            {
-                // change direction
-                moveRight *= -1;
-                ComputeVelocity();
-                MoveGomba();
-            }
-        }
         
+    }
+
+    public void onGameRestart()
+    {
+        goombas = new GameObject[goombaLocationX.Length];
+        for (int i = 0; i < goombaLocationX.Length; i++)
+        { 
+            goombas[i] = Instantiate(goombaPrefab, new Vector3(goombaLocationX[i], -0.282f, 0), Quaternion.identity);
+        }
+    }
+
+    public void KillAllGoombas()
+    {
+        foreach(GameObject goomba in goombas)
+        {
+            Destroy(goomba);
+        }
+    }
+
+    public void StopGoombaMovement()
+    {
+        GoombaController[] allGoombas = FindObjectsOfType<GoombaController>();
+        for(int i = 0; i < allGoombas.Length; i++)
+        {
+            allGoombas[i].StopGoombaMovement();
+        }
     }
 }

@@ -16,21 +16,21 @@ public class PlayerController : MonoBehaviour
     private bool onGroundState = true;
     public float upSpeed = 30;
 
+    //-------------------------- ANIMATION STUFF --------------------------
+    private Animator marioAnimator;
+    private bool marioIsBig = false; // boolean to determine if is small mario or big mario
+    private bool marioInvincible = false; // for when mario is invincible
+    private float marioInvincibleDuration;
+    [SerializeField] Sprite smallMarioIdle;
+    [SerializeField] Sprite bigMarioIdle;
     // mario's sprite to face left and right
     private SpriteRenderer marioSprite;
     private bool faceRightState = true;
 
-    public Transform enemyLocation;
-
     // score 
     public Text scoreText;
     private int score = 0;
-    private bool countScoreState = false;
 
-    // audio 
-    [SerializeField] private AudioSource jumpSound;
-    [SerializeField] private AudioSource marioDie;
-    [SerializeField] private AudioSource collectCoin;
     private bool dieSoundPlayed = false;
 
     // stuff for mario dying "animation"
@@ -39,6 +39,15 @@ public class PlayerController : MonoBehaviour
     private bool fallingDownNow = false;
     private float maxHeight;
 
+    // coin count
+    [SerializeField] private Text coinCountText;
+    private int coinCount = 0;
+
+    // throwing axe
+    [SerializeField] private GameObject throwingAxe;
+
+    // Pipe that can be entered
+    [SerializeField] private GameObject pipeTeleport1;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +60,17 @@ public class PlayerController : MonoBehaviour
         originalX = transform.position.x;
         originalY = transform.position.y;
         maxHeight = originalY + 3.0f;
+
+        marioAnimator = GetComponent<Animator>();
+
+        updateCollider();
+    }
+
+    private void updateCollider()
+    {
+        Vector2 S = gameObject.GetComponent<SpriteRenderer>().sprite.bounds.size;
+        gameObject.GetComponent<BoxCollider2D>().size = S;
+        //gameObject.GetComponent<BoxCollider2D>().offset = new Vector2((S.x / 2), 0);
     }
 
     // Update is called once per frame
@@ -59,26 +79,61 @@ public class PlayerController : MonoBehaviour
         // toggle state
         if ((Input.GetKeyDown("a") || Input.GetKeyDown("left")) && faceRightState)
         {
+            if (Mathf.Abs(marioBody.velocity.x) > 1.0)
+            {
+                marioAnimator.SetTrigger("onSkid");
+            }
             faceRightState = false;
             marioSprite.flipX = true;
         }
 
         if ((Input.GetKeyDown("d") || Input.GetKeyDown("right")) && !faceRightState)
         {
+            if (Mathf.Abs(marioBody.velocity.x) > 1.0)
+            {
+                marioAnimator.SetTrigger("onSkid");
+            }
             faceRightState = true;
             marioSprite.flipX = false;
         }
 
-        if (!onGroundState && countScoreState)
+        if (Input.GetKeyDown("t"))
         {
-            if(Mathf.Abs(transform.position.x - enemyLocation.position.x) < 0.5f)
+            marioThrowAxe();
+        }
+
+        if (Input.GetKeyDown("down") || Input.GetKeyDown("s"))
+        {
+            marioAnimator.SetBool("downKeyPressed", true);
+        }
+
+        if(Mathf.Abs(transform.position.x - pipeTeleport1.transform.position.x) < 2.0f)
+        {
+            FindObjectOfType<MenuController>().nothingToSeeHere();
+        }
+
+        if (Mathf.Abs(transform.position.x - pipeTeleport1.transform.position.x) > 2.0f)
+        {
+            FindObjectOfType<MenuController>().hideNothingToSeeHere();
+        }
+
+        if (marioInvincible)
+        {
+            if(marioInvincibleDuration > 0)
             {
-                countScoreState = false;
-                score++;
+                marioInvincibleDuration -= Time.deltaTime;
+            }
+            else
+            {
+                marioInvincible = false;
             }
         }
 
-        scoreText.text = "Score: " + score.ToString();
+
+        marioAnimator.SetBool("onGround", onGroundState);
+        marioAnimator.SetFloat("xSpeed", Mathf.Abs(marioBody.velocity.x));
+        scoreText.text = score.ToString();
+        coinCountText.text = "x " + coinCount.ToString();
     }
 
     private void FixedUpdate()
@@ -111,10 +166,9 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown("space") && onGroundState)
         {
-            jumpSound.Play();
+            PlayJumpSound(); // done in animator
             marioBody.AddForce(Vector2.up * upSpeed, ForceMode2D.Impulse);
             onGroundState = false;
-            countScoreState = true; // check if Gomba is underneath
         }
 
         if (Input.GetKeyUp("a") || Input.GetKeyUp("d"))
@@ -123,17 +177,89 @@ public class PlayerController : MonoBehaviour
             marioBody.velocity = Vector2.zero;
         }
 
+        if (Input.GetKeyUp("down") || Input.GetKeyUp("s"))
+        {
+            marioAnimator.SetBool("downKeyPressed", false);
+        }
+
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Ground"))
+        if (col.gameObject.CompareTag("Ground") || col.gameObject.CompareTag("Obstacles") || col.gameObject.CompareTag("Pipe"))
         {
             onGroundState = true;
-            countScoreState = false; // reset score state
-            scoreText.text = "Score: " + score.ToString();
+        }
+
+        if (col.gameObject.CompareTag("PipeTeleport"))
+        {
+            onGroundState = true;
+        }
+
+        if (col.gameObject.CompareTag("Spawned"))
+        {
+            if (marioIsBig)
+            {
+                FindObjectOfType<AudioManager>().collectCoin(); // using coin sound for mushroom lol
+                score += 500;
+            }
+            else
+            {
+                FindObjectOfType<AudioManager>().mushroomBecomeBig();
+                marioSprite.sprite = bigMarioIdle;
+                updateCollider();
+                marioIsBig = true;
+                marioAnimator.SetBool("isBig", marioIsBig);
+            }
+            
         }
     }
+
+    public void MarioHitByGoomba()
+    {
+        if (marioIsBig)
+        {
+            // currently separating the two because I might implement invincible mushroom
+            if (!marioInvincible)
+            {
+                marioSprite.sprite = smallMarioIdle;
+                updateCollider();
+                FindObjectOfType<AudioManager>().marioFall();
+                marioIsBig = false;
+                marioAnimator.SetBool("isBig", marioIsBig);
+                marioInvincible = true;
+                marioInvincibleDuration = 2.0f;
+            }
+        }
+
+        else
+        {
+            if (!marioInvincible)
+            {
+                MarioDead();
+
+                GoombaController[] allGoombas = FindObjectsOfType<GoombaController>();
+                for (int i = 0; i < allGoombas.Length; i++)
+                {
+                    allGoombas[i].MarioDead();
+                }
+            }
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("PipeTeleport"))
+        {
+            if (Input.GetKeyDown("down") || Input.GetKeyDown("s"))
+            {
+                FindObjectOfType<CameraController>().PlayerWarpedToToilet();
+                FindObjectOfType<AudioManager>().marioWarped();
+                transform.position = new Vector2(-2.2f, -10.5f);
+            }
+        }
+    }
+
 
     public void RestartGame()
     {
@@ -151,41 +277,107 @@ public class PlayerController : MonoBehaviour
         maxSpeed = 40;
         upSpeed = 30;
         score = 0;
+        coinCount = 0;
+    }
+
+    public void MarioDead()
+    {
+        // code to only play the die sound once
+        if (!dieSoundPlayed)
+        {
+            FindObjectOfType<MenuController>().stopSong();
+            FindObjectOfType<AudioManager>().marioDead();
+            dieSoundPlayed = true;
+        }
+
+        // freeze mario's movements
+        speed = 0;
+        maxSpeed = 0;
+        upSpeed = 0;
+
+        FindObjectOfType<GameManager>().EndGame();
+
+        // code to make mario fall into the abyss
+        boxCollider2d.enabled = false;
+        intoTheAbyss = true;
+    }
+
+    public void WinGame()
+    {
+        speed = 0;
+        maxSpeed = 0;
+        upSpeed = 0;
+    }
+
+    public void StopMarioMovements()
+    {
+        // freeze mario's movements
+        speed = 0;
+        maxSpeed = 0;
+        upSpeed = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Enemy"))
-        {
-            // code to only play the die sound once
-            if (!dieSoundPlayed)
-            {
-                FindObjectOfType<MenuController>().stopSong();
-                marioDie.Play();
-                dieSoundPlayed = true;
-            }
-
-            // freeze mario's movements
-            speed = 0;
-            maxSpeed = 0;
-            upSpeed = 0;
-
-            FindObjectOfType<GameManager>().EndGame();
-
-            // code to make mario fall into the abyss
-            boxCollider2d.enabled = false;
-            intoTheAbyss = true;
-        }
-
         if (other.gameObject.CompareTag("Coin"))
         {
             // if mario haven't die yet
             if (!intoTheAbyss)
             {
-                collectCoin.Play();
-                score++;
+                marioCollectCoin();
             }
         }
+
+        if (other.gameObject.CompareTag("ToiletPipe"))
+        {
+            transform.position = new Vector2(28.6f, 4.0f);
+            FindObjectOfType<AudioManager>().marioWarped();
+            FindObjectOfType<CameraController>().PlayerWarpedBack();
+        }
+    }
+    
+    public void flattenGoomba()
+    {
+        score += 100;
+        marioBody.AddForce(Vector2.up * 15, ForceMode2D.Impulse);
+    }
+
+    void PlayJumpSound()
+    {
+        if (marioIsBig)
+        {
+            FindObjectOfType<AudioManager>().marioBigJump();
+        }
+        else
+        {
+            FindObjectOfType<AudioManager>().marioSmallJump();
+        }
+    }
+
+    public void marioCollectCoin()
+    {
+        FindObjectOfType<AudioManager>().collectCoin();
+        coinCount++;
+    }
+
+    void marioThrowAxe()
+    {
+        float xDisplacement;
+        float xSpeed = 15.0f;
+
+        if (faceRightState)
+        {
+            xDisplacement = this.transform.position.x + 0.8f; 
+        }
+        else
+        {
+            xDisplacement = this.transform.position.x - 0.8f;
+            xSpeed *= -1;
+        }
+
+        GameObject newAxe = Instantiate(throwingAxe, new Vector3(xDisplacement, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+        FindObjectOfType<ThrowingAxe>().setDirection(faceRightState);
+        newAxe.GetComponent<Rigidbody2D>().velocity = new Vector2(xSpeed, 6.0f);
     }
 
 }
