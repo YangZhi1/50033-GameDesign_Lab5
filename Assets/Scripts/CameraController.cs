@@ -26,8 +26,6 @@ public class CameraController : MonoBehaviour
     private Vector2 quitButtonOffset; // initial offset between quitButton and camera
     private Vector2 rulesOffset; // initial offest between rules and camera
 
-    // controls the background
-    [SerializeField] private Transform background;
     private bool playerWarped = false;
 
     private float originalCameraY;
@@ -77,8 +75,6 @@ public class CameraController : MonoBehaviour
             this.transform.position = new Vector3(desiredX, desiredY, this.transform.position.z);
         }
 
-        background.transform.position = new Vector2(this.transform.position.x, this.transform.position.y);
-
         // move score text to follow camera
         Vector2 desiredScorePosition = new Vector2(this.transform.position.x, this.transform.position.y) + scoreTextOffset;
         scoreText.transform.position = desiredScorePosition;
@@ -104,12 +100,10 @@ public class CameraController : MonoBehaviour
     public void PlayerWarpedToToilet()
     {
         playerWarped = true;
-        background.gameObject.SetActive(false);
     }
 
     public void PlayerWarpedBack()
     {
         playerWarped = false;
-        background.gameObject.SetActive(true);
     }
 }

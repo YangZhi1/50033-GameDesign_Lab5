@@ -49,6 +49,8 @@ public class PlayerController : MonoBehaviour
     // Pipe that can be entered
     [SerializeField] private GameObject pipeTeleport1;
 
+    [SerializeField] private ParticleSystem dustCloud;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +61,6 @@ public class PlayerController : MonoBehaviour
 
         originalX = transform.position.x;
         originalY = transform.position.y;
-        maxHeight = originalY + 3.0f;
 
         marioAnimator = GetComponent<Animator>();
 
@@ -189,11 +190,13 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.CompareTag("Ground") || col.gameObject.CompareTag("Obstacles") || col.gameObject.CompareTag("Pipe"))
         {
             onGroundState = true;
+            dustCloud.Play();
         }
 
         if (col.gameObject.CompareTag("PipeTeleport"))
         {
             onGroundState = true;
+            dustCloud.Play();
         }
 
         if (col.gameObject.CompareTag("Spawned"))
@@ -300,6 +303,7 @@ public class PlayerController : MonoBehaviour
         // code to make mario fall into the abyss
         boxCollider2d.enabled = false;
         intoTheAbyss = true;
+        maxHeight = transform.position.y + 3.0f;
     }
 
     public void WinGame()

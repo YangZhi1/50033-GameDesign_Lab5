@@ -65,7 +65,6 @@ public class MenuController : MonoBehaviour
             qbc[i].onGameRestart();
         }
 
-
         FindObjectOfType<ConsummableMushroom>().onGameRestart();
     }
 
