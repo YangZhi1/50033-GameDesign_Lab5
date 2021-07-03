@@ -14,17 +14,13 @@ public class CameraController : MonoBehaviour
     private float endX; // largest x-coordinate of the camera
     private float viewportHalfWidth;
 
-    [SerializeField] private Text scoreText;
-    [SerializeField] private GameObject coinCountText;
     [SerializeField] private GameObject homeScreen;
-    [SerializeField] private Button quitButton;
     [SerializeField] private GameObject rules;
+    [SerializeField] private GameObject followCameraObject;
 
-    private Vector2 scoreTextOffset; // initial offset between scoreText and camera
-    private Vector2 coinCountOffset; // initial offset between coinCountText and camera
     private Vector2 homeScreenOffset; // initial offset between homeScreen and camera
-    private Vector2 quitButtonOffset; // initial offset between quitButton and camera
     private Vector2 rulesOffset; // initial offest between rules and camera
+    private Vector2 followCameraObjectOffset;
 
     private bool playerWarped = false;
 
@@ -50,10 +46,8 @@ public class CameraController : MonoBehaviour
         startX = startLimit.transform.position.x + viewportHalfWidth; // this.transform.position.x;
         endX = endLimit.transform.position.x - viewportHalfWidth;
 
-        scoreTextOffset = new Vector2(scoreText.transform.position.x - this.transform.position.x, scoreText.transform.position.y - this.transform.position.y);
-        coinCountOffset = new Vector2(coinCountText.transform.position.x - this.transform.position.x, coinCountText.transform.position.y - this.transform.position.y);
+        followCameraObjectOffset = new Vector2(followCameraObject.transform.position.x - this.transform.position.x, followCameraObject.transform.position.y - this.transform.position.y);
         homeScreenOffset = new Vector2(homeScreen.transform.position.x - this.transform.position.x, homeScreen.transform.position.y - this.transform.position.y);
-        quitButtonOffset = new Vector2(quitButton.transform.position.x - this.transform.position.x, quitButton.transform.position.y - this.transform.position.y);
         rulesOffset = new Vector2(rules.transform.position.x - this.transform.position.x, rules.transform.position.y - this.transform.position.y);
     }
 
@@ -75,17 +69,9 @@ public class CameraController : MonoBehaviour
             this.transform.position = new Vector3(desiredX, desiredY, this.transform.position.z);
         }
 
-        // move score text to follow camera
-        Vector2 desiredScorePosition = new Vector2(this.transform.position.x, this.transform.position.y) + scoreTextOffset;
-        scoreText.transform.position = desiredScorePosition;
-
-        // move coin count to follow camera
-        Vector2 desiredCoinCountPosition = new Vector2(this.transform.position.x, this.transform.position.y) + coinCountOffset;
-        coinCountText.transform.position = desiredCoinCountPosition;
-
-        // move quit button to follow camera
-        Vector2 desiredQuitButtonPosition = new Vector2(this.transform.position.x, this.transform.position.y) + quitButtonOffset;
-        quitButton.transform.position = desiredQuitButtonPosition;
+        // move the Follow Camera gameObject to follow the camera
+        Vector2 desiredFollowObjectPosition = new Vector2(this.transform.position.x, this.transform.position.y) + followCameraObjectOffset;
+        followCameraObject.transform.position = desiredFollowObjectPosition;
     }
 
     public void GameOverUpdate()

@@ -33,13 +33,13 @@ public class EndFlagScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            moveFlag = true;
+
             FindObjectOfType<AudioManager>().stopThemeSong();
             FindObjectOfType<AudioManager>().playClear();
             FindObjectOfType<GameManager>().EndGame();
             FindObjectOfType<PlayerController>().StopMarioMovements();
-            FindObjectOfType<GoombaController>().StopGoombaMovement();
-
-            moveFlag = true;
+            //FindObjectOfType<GoombaController>().StopGoombaMovement();    
         }
     }
 }

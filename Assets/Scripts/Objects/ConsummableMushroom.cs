@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -50,7 +50,7 @@ public class ConsummableMushroom : MonoBehaviour
         // if collide with player, stop moving
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            StartCoroutine(enlarge());
             //velocity = new Vector2(0, 0);
         }
     }
@@ -63,5 +63,21 @@ public class ConsummableMushroom : MonoBehaviour
     public void onGameRestart()
     {
         Destroy(gameObject);
+    }
+
+
+    IEnumerator enlarge()
+    {
+        int steps = 5;
+        float stepper = 0.5f / (float)steps;
+
+        for (int i = 0; i < steps; i++)
+        {
+            this.transform.localScale = new Vector3(this.transform.localScale.x + stepper, this.transform.localScale.y + stepper, this.transform.localScale.z);
+            yield return null;
+        }
+        Destroy(gameObject);
+        this.gameObject.SetActive(false);
+        yield break;
     }
 }

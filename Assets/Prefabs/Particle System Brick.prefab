@@ -67,6 +67,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 182433375120477582, guid: 9f853c566c3485d42a8d0f6cc85bf51b, type: 3}
+  disappearingCoin: {fileID: 1082343277284321727, guid: 2176b76130357a64e8ee4e280d315876, type: 3}
 --- !u!1 &8295115090128634005
 GameObject:
   m_ObjectHideFlags: 0

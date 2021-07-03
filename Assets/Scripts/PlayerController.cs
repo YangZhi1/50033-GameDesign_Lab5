@@ -27,10 +27,6 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer marioSprite;
     private bool faceRightState = true;
 
-    // score 
-    public Text scoreText;
-    private int score = 0;
-
     private bool dieSoundPlayed = false;
 
     // stuff for mario dying "animation"
@@ -65,6 +61,8 @@ public class PlayerController : MonoBehaviour
         marioAnimator = GetComponent<Animator>();
 
         updateCollider();
+
+        GameManager.OnPlayerDeath += MarioDead;
     }
 
     private void updateCollider()
@@ -130,10 +128,19 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        // for consumption of power ups
+        if (Input.GetKeyDown("z"))
+        {
+            CentralManager.centralManagerInstance.consumePowerup(KeyCode.Z, this.gameObject);
+        }
+
+        if (Input.GetKeyDown("x"))
+        {
+            CentralManager.centralManagerInstance.consumePowerup(KeyCode.X, this.gameObject);
+        }
 
         marioAnimator.SetBool("onGround", onGroundState);
         marioAnimator.SetFloat("xSpeed", Mathf.Abs(marioBody.velocity.x));
-        scoreText.text = score.ToString();
         coinCountText.text = "x " + coinCount.ToString();
     }
 
@@ -204,7 +211,7 @@ public class PlayerController : MonoBehaviour
             if (marioIsBig)
             {
                 FindObjectOfType<AudioManager>().collectCoin(); // using coin sound for mushroom lol
-                score += 500;
+                CentralManager.centralManagerInstance.increaseScore(500);
             }
             else
             {
@@ -239,13 +246,8 @@ public class PlayerController : MonoBehaviour
         {
             if (!marioInvincible)
             {
-                MarioDead();
-
-                GoombaController[] allGoombas = FindObjectsOfType<GoombaController>();
-                for (int i = 0; i < allGoombas.Length; i++)
-                {
-                    allGoombas[i].MarioDead();
-                }
+                CentralManager.centralManagerInstance.damagePlayer();
+                // MarioDead();
             }
         }
     }
@@ -266,6 +268,12 @@ public class PlayerController : MonoBehaviour
 
     public void RestartGame()
     {
+        // make mario small again
+        marioSprite.sprite = smallMarioIdle;
+        updateCollider();
+        marioIsBig = false;
+        marioAnimator.SetBool("isBig", marioIsBig);
+
         // reset mario's position
         transform.position = new Vector2(originalX, originalY);
         
@@ -279,8 +287,8 @@ public class PlayerController : MonoBehaviour
         speed = 40;
         maxSpeed = 40;
         upSpeed = 30;
-        score = 0;
         coinCount = 0;
+        CentralManager.centralManagerInstance.resetScore();
     }
 
     public void MarioDead()
@@ -342,7 +350,7 @@ public class PlayerController : MonoBehaviour
     
     public void flattenGoomba()
     {
-        score += 100;
+        CentralManager.centralManagerInstance.increaseScore(100);
         marioBody.AddForce(Vector2.up * 15, ForceMode2D.Impulse);
     }
 
@@ -383,5 +391,4 @@ public class PlayerController : MonoBehaviour
         FindObjectOfType<ThrowingAxe>().setDirection(faceRightState);
         newAxe.GetComponent<Rigidbody2D>().velocity = new Vector2(xSpeed, 6.0f);
     }
-
 }

@@ -25,7 +25,7 @@ public class MenuController : MonoBehaviour
     {
         foreach(Transform eachChild in transform)
         {
-            if(eachChild.name != "Score" && eachChild.name != "CoinCount" && eachChild.name != "QuitButton")
+            if(eachChild.name != "FollowCamera")
             {
                 //Debug.Log("Child found. Name: " + eachChild.name);
                 //disable them
@@ -42,16 +42,16 @@ public class MenuController : MonoBehaviour
         stopSong();
         FindObjectOfType<GameManager>().EndGame();
         FindObjectOfType<PlayerController>().StopMarioMovements();
-        FindObjectOfType<EnemyController>().StopGoombaMovement();
     }
     
     public void RestartButtonClicked()
     {
+        FindObjectOfType<CentralManager>().resetGame();
         FindObjectOfType<AudioManager>().playThemeSong();
         FindObjectOfType<GameManager>().Restart();
         FindObjectOfType<PlayerController>().RestartGame();
-        FindObjectOfType<EnemyController>().KillAllGoombas();
-        FindObjectOfType<EnemyController>().onGameRestart();
+        FindObjectOfType<ParticleSystemObstacle>().onGameRestart();
+        // FindObjectOfType<EnemyController>().onGameRestart();
 
         ObstacleController[] obstacleC = FindObjectsOfType<ObstacleController>();
         QuestionBoxController[] qbc = FindObjectsOfType<QuestionBoxController>();
@@ -64,8 +64,6 @@ public class MenuController : MonoBehaviour
         {
             qbc[i].onGameRestart();
         }
-
-        FindObjectOfType<ConsummableMushroom>().onGameRestart();
     }
 
     public void RuleButtonClicked()

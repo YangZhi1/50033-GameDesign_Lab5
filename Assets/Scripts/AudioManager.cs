@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource mushroom;
     [SerializeField] AudioSource themeSong;
     [SerializeField] AudioSource clear;
+    [SerializeField] AudioSource shatter;
 
     // Start is called before the first frame update
     void Start()
@@ -81,5 +82,10 @@ public class AudioManager : MonoBehaviour
     public void killGoomba()
     {
         stomp.Play();
+    }
+
+    public void glassShatter()
+    {
+        shatter.Play();
     }
 }

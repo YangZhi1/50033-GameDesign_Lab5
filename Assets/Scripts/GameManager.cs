@@ -9,6 +9,13 @@ public class GameManager : MonoBehaviour
 
     public GameObject coinPrefab;
     private GameObject newCoin;
+    public Text score;
+    private int playerScore = 0;
+
+    public delegate void gameEvent();
+    public static event gameEvent OnPlayerDeath;
+    public static event gameEvent OnGameReset;
+
 
     private void Start()
     {
@@ -33,4 +40,24 @@ public class GameManager : MonoBehaviour
         gameHasEnded = false;
     }
 
+    public void increaseScore(int val)
+    {
+        playerScore += val;
+        score.text = playerScore.ToString();
+    }
+
+    public void resetScore()
+    {
+        score.text = "0";
+    }
+
+    public void damagePlayer()
+    {
+        OnPlayerDeath();
+    }
+
+    public void resetGame()
+    {
+        OnGameReset();
+    }
 }
