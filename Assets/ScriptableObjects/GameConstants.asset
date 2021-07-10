@@ -20,6 +20,13 @@ MonoBehaviour:
   spawnNumberOfDebris: 10
   rotatorRotateSpeed: 6
   testValue: 0
+  groundDistance: -4.5
   groundSurface: -0.4
   enemySpeed: 4
   enemyDanceFrequency: 0.2
+  startingNumberGoomba: 2
+  startingNumberGreenEnemy: 1
+  playerStartingMaxSpeed: 5
+  playerMaxJumpSpeed: 30
+  playerDefaultForce: 150
+  playerMaxSpeed: 5

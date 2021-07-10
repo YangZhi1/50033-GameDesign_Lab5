@@ -69,7 +69,7 @@ public class ObjectPooler : MonoBehaviour
 
     }
 
-    public void onGameRestart()
+    /*public void onGameRestart()
     {
         for(int i = 0; i < pooledObjects.Count; i++)
         {
@@ -85,7 +85,7 @@ public class ObjectPooler : MonoBehaviour
         // spawn snail
         for (int j = 0; j < gameConstants.startingNumberGreenEnemy; j++)
             SpawnManager.SpawnManagerInstance.spawnFromPooler(ObjectType.greenEnemy);
-    }
+    }*/
 
     // this method can be called by other scripts to get pooled object by its type defined as enum earlier, or simly as tag as you like
     // there's no "return" object to pool method. Simply set it as unavailable

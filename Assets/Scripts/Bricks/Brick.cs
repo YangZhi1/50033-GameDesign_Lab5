@@ -13,6 +13,8 @@ public class Brick : MonoBehaviour
 
     private Vector2 brickSize;
 
+    public AudioSource smb_coin;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +42,7 @@ public class Brick : MonoBehaviour
                         // create coin above it
                         // up coin count
                         GameObject newCoin = Instantiate(disappearingCoin, new Vector3(this.transform.position.x, this.transform.position.y + 1.3f, this.transform.position.z), Quaternion.identity);
-                        FindObjectOfType<PlayerController>().marioCollectCoin();
+                        smb_coin.Play();
                     }
                     if (breakCount == 0)
                     {

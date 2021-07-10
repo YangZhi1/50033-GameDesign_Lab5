@@ -16,6 +16,7 @@ TagManager:
   - FlyingAxe
   - ToiletPipe
   - Fire
+  - MoneyBrick
   layers:
   - Default
   - TransparentFX

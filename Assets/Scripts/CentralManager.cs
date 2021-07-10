@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CentralManager : MonoBehaviour
 {
@@ -45,19 +46,36 @@ public class CentralManager : MonoBehaviour
 	}
 
 	public void resetGame()
-    {
+	{
 		gameManager.resetGame();
-		ObjectPooler.SharedInstance.onGameRestart();
+		//ObjectPooler.SharedInstance.onGameRestart();
 
 		GoombaController[] allEnemies = FindObjectsOfType<GoombaController>();
-		foreach(GoombaController enemy in allEnemies)
-        {
+		foreach (GoombaController enemy in allEnemies)
+		{
 			enemy.ResetEnemy();
-        }
+		}
 	}
 
 	public void resetScore()
-    {
+	{
 		gameManager.resetScore();
-    }
+	}
+
+	public void changeScene()
+	{
+		StartCoroutine(LoadYourAsyncScene("Level 2"));
+	}
+
+	IEnumerator LoadYourAsyncScene(string sceneName)
+	{
+		// The Application loads the Scene in the background as the current Scene runs.
+		// This is particularly good for creating loading screens.
+		AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+		// Wait until the asynchronous scene fully loads
+		while (!asyncLoad.isDone)
+		{
+			yield return null;
+		}
+	}
 }

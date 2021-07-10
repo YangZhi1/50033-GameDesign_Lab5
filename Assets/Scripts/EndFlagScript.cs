@@ -18,7 +18,8 @@ public class EndFlagScript : MonoBehaviour
     {
         if (moveFlag)
         {
-            if (flagBody.position.y < 2.6f)
+            Debug.Log(flagBody.position.y);
+            if (flagBody.position.y < 6.0f)
             {
                 flagBody.MovePosition(flagBody.position + new Vector2(0, 1.0f) * Time.fixedDeltaTime);
             }
@@ -29,7 +30,13 @@ public class EndFlagScript : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void EndGame()
+    {
+        Debug.Log("flag moving up");
+        moveFlag = true;
+    }
+
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -41,5 +48,5 @@ public class EndFlagScript : MonoBehaviour
             FindObjectOfType<PlayerController>().StopMarioMovements();
             //FindObjectOfType<GoombaController>().StopGoombaMovement();    
         }
-    }
+    }*/
 }

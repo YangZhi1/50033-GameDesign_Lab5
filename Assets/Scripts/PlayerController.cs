@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject throwingAxe;
 
     // Pipe that can be entered
-    [SerializeField] private GameObject pipeTeleport1;
+    // [SerializeField] private GameObject pipeTeleport1;
 
     [SerializeField] private ParticleSystem dustCloud;
 
@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
             marioAnimator.SetBool("downKeyPressed", true);
         }
 
-        if(Mathf.Abs(transform.position.x - pipeTeleport1.transform.position.x) < 2.0f)
+        /*if(Mathf.Abs(transform.position.x - pipeTeleport1.transform.position.x) < 2.0f)
         {
             FindObjectOfType<MenuController>().nothingToSeeHere();
         }
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(transform.position.x - pipeTeleport1.transform.position.x) > 2.0f)
         {
             FindObjectOfType<MenuController>().hideNothingToSeeHere();
-        }
+        }*/
 
         if (marioInvincible)
         {

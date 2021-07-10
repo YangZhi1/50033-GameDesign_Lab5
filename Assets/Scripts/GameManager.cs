@@ -3,8 +3,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
+    
+
     bool gameHasEnded = false;
 
     public GameObject coinPrefab;
@@ -16,6 +18,21 @@ public class GameManager : MonoBehaviour
     public static event gameEvent OnPlayerDeath;
     public static event gameEvent OnGameReset;
 
+
+    // Singleton Pattern
+    private static GameManager _instance;
+    // Getter
+    public static GameManager Instance
+    {
+        get { return _instance; }
+    }
+
+    override public void Awake()
+    {
+        base.Awake();
+        Debug.Log("awake called");
+        // other instructions...
+    }
 
     private void Start()
     {
